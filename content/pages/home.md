@@ -10,7 +10,7 @@ save_as: index.html
     <div id = "intro">
     Welcome to my little patch of the internet! I'm an undergraduate student at MIT with a passion for machine learnine and data science.
     I'm interested in topics in computer vision, computational photography, and statistical learning. Previously, I did research at 
-    Sensebrain Technology doing research in monocular Bokeh synthesis with mobile cameras.
+    Sensebrain Technology studying bokeh synthesis for mobile cameras.
     </p>
     <h2>updates</h2>
     <ul>
