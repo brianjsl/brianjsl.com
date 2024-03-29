@@ -1,0 +1,7 @@
+title: About
+slug: about
+lang: en
+summary: About Page
+
+I'm a second-year undergraduate at MIT double majoring in Course 6-4 (AI and Decision Making) and 18 (Mathematics) with a minor in Chinese.
+My main interests are in machine learning, particularly topics in Computer Vision, Computational Photography, and Statistical Inference. 
