@@ -1,0 +1,15 @@
+li {
+    display: flex;
+    align-items: center;
+    padding: 2em;
+}
+
+img {
+    width: 300px;
+}
+
+.proj {
+    padding-left: 2em;
+    font-size: 20px;
+    justify-items: center;
+}

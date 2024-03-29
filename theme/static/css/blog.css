@@ -2,3 +2,14 @@ article {
     padding-top: 1em;
     border-bottom: thin solid gray;
 }
+
+#blogTitle {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+#blogSubtitle {
+    font-style: normal;
+    margin: 0;
+    font-weight: 100;
+}

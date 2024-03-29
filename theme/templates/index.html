@@ -17,9 +17,6 @@
         {% for p in pages %}
         <li><a href="{{ SITEURL }}/{{ p.url }}" {% if p==page %} aria-current="page" {% endif %}>{{ p.title }}</a></li>
         {% endfor %}
-        {% for cat, null in categories %}
-        <li><a href="{{ SITEURL }}/{{ cat.url }}" {% if cat==category %} aria-current="page" {% endif %}>{{ cat}}</a></li>
-        {% endfor %}
 </ul></nav>
 <article>
     {% for p in hidden_pages %}

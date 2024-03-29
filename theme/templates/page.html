@@ -12,10 +12,13 @@
   {% endif %}
 {% endblock %}
 
-{% block content %}
+{% block content_title %}
   <header>
     <h2 class="pageTitle">{{ page.title }}</h2>
   </header>
+{% endblock %}
+
+{% block content %}
     {% import 'translations.html' as translations with context %}
     {{ translations.translations_for(page) }}
 
