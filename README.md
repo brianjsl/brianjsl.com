@@ -1,6 +1,6 @@
 # Source for https://www.brianjsl.com
 
-This repository contains the source for ![https://www.brianjsl.com](https://www.brianjsl.com)
+This repository contains the source for [https://www.brianjsl.com](https://www.brianjsl.com)
 
 ## Building the Blog
 
