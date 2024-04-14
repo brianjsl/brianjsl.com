@@ -20,7 +20,7 @@ GITHUB_URL = 'https://github.com/brianjsl/brianjsl.com'
 ARTICLE_PATHS= ['posts']
 ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
-#DEFAULT_METADATA = {'status': 'draft'}
+DEFAULT_METADATA = {'status': 'draft'}
 
 DEFAULT_PAGINATION = 10
 

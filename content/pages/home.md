@@ -5,6 +5,7 @@ summary: About Page
 status: hidden
 template: index
 save_as: index.html
+status: published
 
 <div id="flexIntro">
     <div id = "intro">
@@ -17,7 +18,10 @@ save_as: index.html
        <li> <b>03/2024:</b> Hello World! 
     </ul>
     </div>
-    <img src="images/profile.jpg" alt="drawing" style="width:40em;" id="profilePhoto"/>
+    <figure>
+        <img src="images/profile2.jpg" alt="drawing" style="width:40em;" id="profilePhoto"/>
+        <figcaption>This photo was taken at the <i>Jade Garden</i> <br />arboretum in <i>Chuncheon</i>, South Korea</figcaption>
+    </figure>
 </div>
 
 

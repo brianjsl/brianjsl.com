@@ -3,6 +3,7 @@ slug: research
 lang: en
 summary: Research
 template: projects 
+status: published
 
 <ul>
     <li> <img src="images/bokeh_loss_gan.png" /> 

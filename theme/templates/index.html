@@ -21,8 +21,14 @@
 <article>
     {% for p in hidden_pages %}
         {% if p.title == 'Home' %}
+        <div>
             {{ p.content }}
+        </div>
         {% endif %}
     {% endfor %}
 </article>
+{% endblock %}
+
+{% block footer %}
+{{ super() }}
 {% endblock %}

@@ -17,8 +17,9 @@
 {% block content %}
 
 {{ super() }}
+<div class="articleList">
 {% for article in articles %}
-        <article>
+        <article class = "blogPost">
                 <header> <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">#{{ loop.length-loop.index+1 }}: {{ article.title }}</a></h2> </header>
                 <section>{{ article.summary }}</section>
                 <footer>
@@ -26,6 +27,11 @@
                 </footer>
         </article>
 {% endfor %}
+</div>
 
 
 {% endblock content %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}
