@@ -5,7 +5,6 @@ summary: About Page
 status: hidden
 template: index
 save_as: index.html
-status: published
 
 <div id="flexIntro">
     <div id = "intro">
