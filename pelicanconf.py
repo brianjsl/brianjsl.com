@@ -27,7 +27,7 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
-PLUGINS = ['pelican.plugins.render_math', ]
+PLUGINS = ['pelican.plugins.render_math']
 IGNORE_FILES = []
 
 DISPLAY_PAGES_ON_MENU = True
@@ -45,6 +45,10 @@ TWITTER_USERNAME = 'brianjsl'
 GITHUB_USERNAME = 'brianjsl'
 
 ENABLE_MATHJAX = True
+MATH_JAX = {
+    "auto_insert": False,
+    "process_summary": False,
+}
 
 # Footer info
 LICENSE_URL = 'https://github.com/brianjsl/brianjsl.com/blob/main/LICENSE'
