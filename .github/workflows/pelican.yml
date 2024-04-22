@@ -11,6 +11,6 @@ jobs:
       pages: "write"
       id-token: "write"
     with:
-      settings: "publishconf.py"
-      requirements: "pelican[markdown] typogrify pelican-render-math"
+      settings: "pelicanconf.py"
+      requirements: "pelican[markdown] typogrify pelican-katex markdown"
       output-path: "output/"

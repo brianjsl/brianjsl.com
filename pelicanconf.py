@@ -1,3 +1,6 @@
+import os
+import markdown.util
+
 AUTHOR = 'Brian Lee'
 SITENAME = 'brian lee'
 NAME_KOR = '이지상 李知相'
@@ -27,8 +30,13 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
-PLUGINS = ['pelican.plugins.render_math']
+#PLUGINS = ['pelican.plugins.render_math']
+PLUGIN_PATHS = ['pelican']
+PLUGINS = ['pelican_katex']
 IGNORE_FILES = []
+
+for tag in ('figure', 'figcaption'):
+    markdown.util.BLOCK_LEVEL_ELEMENTS.remove(tag)
 
 DISPLAY_PAGES_ON_MENU = True
 
@@ -44,11 +52,13 @@ ABOUT_PAGE = '/pages/about.md'
 TWITTER_USERNAME = 'brianjsl'
 GITHUB_USERNAME = 'brianjsl'
 
-ENABLE_MATHJAX = True
+ENABLE_MATHJAX = False
 MATH_JAX = {
     "auto_insert": False,
     "process_summary": False,
-}
+} 
+
+
 
 # Footer info
 LICENSE_URL = 'https://github.com/brianjsl/brianjsl.com/blob/main/LICENSE'
