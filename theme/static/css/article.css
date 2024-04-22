@@ -1,5 +1,6 @@
 #articleContent {
     width: 70%;
+    font-family: "Roboto",sans-serif;
 }
 
 #articleContainer {
@@ -14,6 +15,7 @@
 
 #title {
     width: 70%;
+    font-family: "Roboto", sans-serif;
 }
 
 #blogTitle {

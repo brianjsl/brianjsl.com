@@ -1,5 +1,5 @@
 body {
-  font-family: monospace;
+  font-family: monospace; 
   font-size: 100%;
   background-color: white;
   color: #111;
@@ -35,8 +35,10 @@ h6 a { color: inherit !important }
 }
 
 pre {
-    margin: 2em 1em 2em 4em;
+    margin: 1em 1em 2em 2em;
     white-space: pre-wrap;
+    background: none;
+    padding: 1em 0 1em 0;
 }
 
 #titleHead {
@@ -66,4 +68,8 @@ figure {
 
 figcaption {
     width: 60%;
+}
+
+code {
+    font-family: source code pro,lucida console,monospace
 }

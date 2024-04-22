@@ -20,7 +20,8 @@
 <div class="articleList">
 {% for article in articles %}
         <article class = "blogPost">
-                <header> <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">#{{ loop.length-loop.index+1 }}: {{ article.title }}</a></h2> </header>
+                <!-- <header> <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">#{{ loop.length-loop.index+1 }}: {{ article.title }}</a></h2> </header>-->
+                <header> <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2></header>
                 <section>{{ article.summary }}</section>
                 <footer>
                     <p>Published: <time datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time></p>
@@ -28,7 +29,6 @@
         </article>
 {% endfor %}
 </div>
-
 
 {% endblock content %}
 
