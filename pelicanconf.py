@@ -31,8 +31,7 @@ DEFAULT_PAGINATION = 10
 # RELATIVE_URLS = True
 
 #PLUGINS = ['pelican.plugins.render_math']
-PLUGIN_PATHS = ['pelican']
-PLUGINS = ['pelican_katex']
+PLUGINS = ['plugins.pelican_katex']
 IGNORE_FILES = []
 
 for tag in ('figure', 'figcaption'):
