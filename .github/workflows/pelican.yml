@@ -12,5 +12,5 @@ jobs:
       id-token: "write"
     with:
       settings: "pelicanconf.py"
-      requirements: "pelican[markdown] typogrify pelican-katex markdown"
+      requirements: "pelican[markdown] typogrify markdown"
       output-path: "output/"

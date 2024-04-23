@@ -33,7 +33,6 @@ DEFAULT_PAGINATION = 10
 #PLUGINS = ['pelican.plugins.render_math']
 PLUGIN_PATHS=['plugins']
 PLUGINS = ['pelican_katex']
-IGNORE_FILES = []
 
 for tag in ('figure', 'figcaption'):
     markdown.util.BLOCK_LEVEL_ELEMENTS.remove(tag)
