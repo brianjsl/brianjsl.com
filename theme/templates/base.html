@@ -84,6 +84,20 @@
         </script>
         <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script> -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" crossorigin="anonymous">
+        {% if article %}
+        {% if article.styles %}
+                {% for style in article.styles %}
+        {{ style }}
+                {% endfor %}
+        {% endif %}
+        {% endif %}
+        {% if page %}
+        {% if page.styles %}
+                {% for style in page.styles %}
+        {{ style }}
+                {% endfor %}
+        {% endif %}
+        {% endif %}
 {% endblock head %}
 </head>
 
@@ -101,6 +115,21 @@
         {% block content %}
         {% endblock %}
 
+        {% if article %}
+        {% if article.scripts %}
+                {% for script in article.scripts %}
+        {{ script }}
+                {% endfor %}
+        {% endif %}
+        {% endif %}
+
+        {% if page %}
+        {% if page.scripts %}
+                {% for script in page.scripts %}
+        {{ script }}
+                {% endfor %}
+        {% endif %}
+        {% endif %}
         {% block footer %}
         <footer>
         <a href="https://scholar.google.com/citations?user=axsOTc4AAAAJ&hl=en">scholar</a>/<a href="https://github.com/brianjsl">github</a>/<a href="https://www.linkedin.com/in/brian-lee-%EC%9D%B4%EC%A7%80%EC%83%81-70a3111ab/">linkedin</a> <br /> <br />

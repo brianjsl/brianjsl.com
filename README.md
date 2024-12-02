@@ -16,7 +16,7 @@ Install the required packages with a virtual environment using condas:
 ```
 $ conda create -n pelican-web python=3.10
 $ conda activate pelican-web
-$ conda install -c conda-forge pelican Markdown typography pelican-render-math
+$ conda install -c conda-forge pelican Markdown pelican-render-math
 ```
 
 Build the html and serve locally:

@@ -32,7 +32,7 @@ DEFAULT_PAGINATION = 10
 
 #PLUGINS = ['pelican.plugins.render_math']
 PLUGIN_PATHS=['plugins']
-PLUGINS = ['pelican_katex']
+PLUGINS = ['pelican_cite', 'pelican_katex']
 
 for tag in ('figure', 'figcaption'):
     markdown.util.BLOCK_LEVEL_ELEMENTS.remove(tag)
@@ -79,3 +79,6 @@ EXTRA_PATH_METADATA = {
     'extra/LICENSE': {'path': 'LICENSE'},
     'extra/README': {'path': 'README'},
 }
+
+#bibtex
+PUBLICATIONS_SRC = 'content/bibliography/references.bib'
