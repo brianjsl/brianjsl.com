@@ -13,4 +13,4 @@ jobs:
     with:
       settings: "pelicanconf.py"
       requirements: "pelican[markdown] typogrify markdown"
-      output-path: "output/"
+      output-path: "output/"      
