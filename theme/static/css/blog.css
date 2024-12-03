@@ -24,3 +24,7 @@ article {
     flex-direction: column;
     align-items: center;
 }
+
+.imgside {
+    display: flex;
+}
