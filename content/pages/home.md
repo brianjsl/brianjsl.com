@@ -19,7 +19,7 @@ save_as: index.html
     </ul>
     </div>
     <figure>
-        <img src="images/profile.png" alt="drawing" style="width:30em;" id="profilePhoto" s/>
+        <img src="images/profile_big.png" alt="drawing" style="width:30em;" id="profilePhoto" s/>
         <!-- <figcaption>This photo was taken at the <i>Jade Garden</i> <br />arboretum in <i>Chuncheon</i>, South Korea</figcaption> -->
     </figure>
 </div>
