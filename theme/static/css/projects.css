@@ -13,3 +13,9 @@ img {
     font-size: 20px;
     justify-items: center;
 }
+
+.code_proj {
+    padding-left: 2em;
+    font-size: 5px;
+    justify-items: center;
+}

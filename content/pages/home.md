@@ -13,13 +13,15 @@ save_as: index.html
     Sensebrain Technology studying bokeh synthesis for mobile cameras. Currently, I am part of the 
     <a href="https://www.scenerepresentations.org/">Scene Representation Group</a> at MIT, working on diffusion models for planning.
     </p>
+    
     <h2>updates</h2>
     <ul>
        <li> <b>03/2024:</b> Hello World! 
+       <li> <b>09/2024:</b> I have joined the <a href="https://www.scenerepresentations.org/">Scene Representation Group</a> at MIT.
     </ul>
     </div>
     <figure>
-        <img src="images/profile_big.png" alt="drawing" style="width:30em;" id="profilePhoto" s/>
+        <img src="images/profile_smile.png" alt="drawing" style="width:30em;" id="profilePhoto" s/>
         <!-- <figcaption>This photo was taken at the <i>Jade Garden</i> <br />arboretum in <i>Chuncheon</i>, South Korea</figcaption> -->
     </figure>
 </div>
