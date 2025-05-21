@@ -19,9 +19,9 @@ list is currently incomplete but I plan on updating these as I go.
 <h2 style="margin-bottom: 0px;"> Spring 2025 </h2>
 <ul style="font-size: 1.2em; list-style-position: outside; margin-left: 0px; margin-top: -20px; margin-bottom: 0px;">
     <li style="display: list-item; margin: 2em; margin-bottom: 0px; padding: 0;">
-        6.3260 (14.15): Networks (TBD)
+        <a href="https://github.com/brianjsl/cheatsheets/blob/main/14.15%20(6.3260)/14.15.pdf">14.15 (6.3260): Networks
     </li>
     <li style="display: list-item; margin: 2em; margin-top: 0px; padding: 0;">
-        6.S966 (8.S301): Symmetry and Applications to Machine Learning (TBD)
+        <a href="https://github.com/brianjsl/cheatsheets/blob/main/6.S966/6.S966.pdf">6.S966 (8.S301): Symmetry and Applications to Machine Learning</a> 
     </li>
 </ul>
