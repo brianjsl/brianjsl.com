@@ -20,7 +20,7 @@ AUTHOR_FEED_RSS = None
 GITHUB_URL = 'https://github.com/brianjsl/brianjsl.com'
 
 # Article settings
-ARTICLE_PATHS= ['posts']
+ARTICLE_PATHS= ['posts', 'writing']
 ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 DEFAULT_METADATA = {'status': 'draft'}
@@ -69,6 +69,9 @@ DIRECT_TEMPLATES= ['index']
 
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
+MENUITEMS = (
+    ('writing', '/writing'),
+)
 
 #static
 STATIC_PATHS=['images', 'favicon.ico']

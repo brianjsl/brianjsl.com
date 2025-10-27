@@ -31,3 +31,9 @@ Deploy to github-pages (using actions):
 ```
 $ git push origin main
 ```
+
+## Creative Writing Blog
+
+- Add creative pieces under `content/writing/` with normal Pelican article metadata and `category: writing`.
+- The primary `blog` page automatically hides entries in the `writing` category.
+- The `writing` page uses the same template but only lists posts in the `writing` category and lets you customize its title/subtitle via the page front matter (`blog_title`, `blog_subtitle`).

@@ -6,11 +6,13 @@
 {% endblock -%}
 
 {% block content_title %}
-{% if BLOG_TITLE %}
-<h1 id="blogTitle">{{ BLOG_TITLE }}</h1>
+{% set page_blog_title = page.blog_title if page and page.blog_title else BLOG_TITLE %}
+{% set page_blog_subtitle = page.blog_subtitle if page and page.blog_subtitle else BLOG_SUBTITLE %}
+{% if page_blog_title %}
+<h1 id="blogTitle">{{ page_blog_title }}</h1>
 {% endif %}
-{% if BLOG_SUBTITLE %}
-<h3 id="blogSubtitle">{{ BLOG_SUBTITLE }}</h3>
+{% if page_blog_subtitle %}
+<h3 id="blogSubtitle">{{ page_blog_subtitle }}</h3>
 {% endif %}
 {% endblock %}
 
@@ -18,7 +20,20 @@
 
 {{ super() }}
 <div class="articleList">
+{% set include_category = page.blog_filter_include if page and page.blog_filter_include else none %}
+{% set exclude_category = page.blog_filter_exclude if page and page.blog_filter_exclude else none %}
+{% set stats = namespace(count=0) %}
 {% for article in articles %}
+        {% set cat_slug = article.category.slug if article.category else '' %}
+        {% set include_article = true %}
+        {% if include_category and cat_slug != include_category %}
+            {% set include_article = false %}
+        {% endif %}
+        {% if exclude_category and cat_slug == exclude_category %}
+            {% set include_article = false %}
+        {% endif %}
+        {% if include_article %}
+        {% set stats.count = stats.count + 1 %}
         <article class = "blogPost">
                 <!-- <header> <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">#{{ loop.length-loop.index+1 }}: {{ article.title }}</a></h2> </header>-->
                 <header> <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2></header>
@@ -27,7 +42,11 @@
                     <p>Published: <time datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time></p>
                 </footer>
         </article>
+        {% endif %}
 {% endfor %}
+{% if stats.count == 0 %}
+        <p class="emptyState">Nothing here yet — check back soon.</p>
+{% endif %}
 </div>
 
 {% endblock content %}

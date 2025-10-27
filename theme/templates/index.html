@@ -10,13 +10,22 @@
 {% endblock %}
 
 {% block content %}
+{% set nav_seen = namespace(entries=[]) %}
 <nav><ul>
-    {% for title, link in MENUITEMS %}
-        <li><a href="{{ link }}">{{ title }}</a></li>
-    {% endfor %}
         {% for p in pages %}
+        {% set page_title = p.title|lower %}
+        {% if page_title not in nav_seen.entries %}
         <li><a href="{{ SITEURL }}/{{ p.url }}" {% if p==page %} aria-current="page" {% endif %}>{{ p.title }}</a></li>
+        {% set nav_seen.entries = nav_seen.entries + [page_title] %}
+        {% endif %}
         {% endfor %}
+    {% for title, link in MENUITEMS %}
+        {% set title_lower = title|lower %}
+        {% if title_lower not in nav_seen.entries %}
+        <li><a href="{{ link }}">{{ title }}</a></li>
+        {% set nav_seen.entries = nav_seen.entries + [title_lower] %}
+        {% endif %}
+    {% endfor %}
 </ul></nav>
 <article>
     {% for p in hidden_pages %}
