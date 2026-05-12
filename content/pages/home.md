@@ -6,27 +6,10 @@ status: hidden
 template: index
 save_as: index.html
 
+<img src="images/drawing.png" alt="drawing of me with a robot arm" id="profilePhoto" />
+
 <div id="flexIntro">
-    <div id = "intro">
-    Welcome to my little patch of the internet! I'm an undergraduate student at MIT studying Computer Science with a minor in Chinese. 
-    I am interested in creating powerful generative models that can understand and reason with the high dimensional data modalities 
-    required for both decision making and dexterous manipulation. Previously, I did research at 
-    Sensebrain Technology studying bokeh synthesis for mobile cameras. Currently, I am working at the Toyota Research Institute, working
-    on diffusion-based behavior models. 
-    </p>
-    
-    <h2>updates</h2>
-    <ul>
-        <li> <b>03/2024:</b> Hello World! 
-        <li> <b>09/2024:</b> I have joined the <a href="https://www.scenerepresentations.org/">Scene Representation Group</a> at MIT.
-        <li> <b>05/2025:</b> I have joined the <a href="https://www.tri.global/">Toyota Research Institute</a> as a Reseaarch Intern.
-    </ul>
+    <div id="intro">
+        <p>I'm a researcher at the robotics division of OpenAI. Previously, I did my Bachelor's at MIT in Computer Science. I am mainly interested in dexterous manipulation, RL, generative modeling, and information-theory.</p>
     </div>
-    <figure>
-        <img src="images/profile_big.jpg" alt="drawing" style="width:30em;" id="profilePhoto" s/>
-        <!-- <figcaption>This photo was taken at the <i>Jade Garden</i> <br />arboretum in <i>Chuncheon</i>, South Korea</figcaption> -->
-    </figure>
 </div>
-
-
-

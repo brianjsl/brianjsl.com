@@ -3,8 +3,8 @@ import markdown.util
 
 AUTHOR = 'Brian Lee'
 SITENAME = 'brian lee'
-NAME_KOR = '이지상 李知相'
-SITESUBTITLE=u'brianjsl [at] mit [dot] edu'
+NAME_KOR = '이지상 (李知相)'
+SITESUBTITLE=u'rabbitnikodym [at] gmail [dot] com'
 BLOG_TITLE=u'the search for intelligence'
 BLOG_SUBTITLE=u'brianjsl\'s blog'
 PATH = 'content'
@@ -74,7 +74,7 @@ MENUITEMS = (
 )
 
 #static
-STATIC_PATHS=['images', 'favicon.ico']
+STATIC_PATHS=['images', 'favicon.ico', 'files']
 
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},  # and this
