@@ -49,7 +49,10 @@ I am in the process of writing a mathematically rigorous introduction to numeric
 During my time at MIT, I maintained a list of both notes and "cheatsheets" for technical classes I took as a way of
 summarizing my understanding. Typically, I edit my notes *post-hoc* so they are a bit more in-depth than the course content 
 (and cover broader things than just the course content) while my cheatsheets simply give a broad overview of the course content. 
-Most of the notes are still a work in progress.
+Most of the notes are still a work in progress. 
+
+
+A full list of coursework can be found [here]({static}/files/misc/coursework.pdf).
 
 <h2 style="margin-bottom: 0px;"> Notes </h2>
 <ul style="font-size: 1.2em; list-style-position: outside; margin-left: 0px; margin-top: -20px; margin-bottom: 0px;">
